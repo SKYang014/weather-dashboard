@@ -4,7 +4,71 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Weather Dashboard</title>
     </head>
-    <body></body>
+    <body class="flex-column min-100-vh">
+        <header class="hero">
+            <h1 class="app-title">Weather Dashboard</h1>
+        </header>
+
+        <main class="flex-row justify-space-between">
+            <!-- left side search bar -->
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <h3 class="card-header text-uppercase">Search By City</h3>
+                    <form id="user-form" class="card-body">
+                        <label class="form-label" for="username"
+                            >Username</label
+                        >
+                        <input
+                            name="username"
+                            id="username"
+                            type="text"
+                            autofocus="true"
+                            class="form-input"
+                        />
+                        <button type="submit" class="btn">Find Weather</button>
+                    </form>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-header text-uppercase">
+                        Previous Searches
+                    </h3>
+                    <div class="card-body" id="language-buttons">
+                        <!-- get rid of these buttons, dynamically create these buttons to display data -->
+                        <!-- <button class="btn" data-language>JavaScript</button>
+                        <button class="btn" data-language>HTML</button>
+                        <button class="btn" data-language>CSS</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- content main display here -->
+            <div>
+                <!-- Main day info here -->
+                <div>current day info here</div>
+                <!-- 5 day forcast here -->
+                <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-8">
+                        <h2 class="subtitle">
+                            5 Day Forcast:
+                            <span id="repo-search-term"></span>
+                        </h2>
+                        <div id="repos-container" class="list-group"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./assets/js/homepage.js"></script>
+    </body>
 </html>
