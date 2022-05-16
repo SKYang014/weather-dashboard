@@ -8,7 +8,7 @@ This website enables users to search and view weather conditions for various cit
 ![Alt text](/assets/images/2.JPG)
 
 These functions are not available
-![Alt text](/assets/images/2.JPG)
+![Alt text](/assets/images/3.JPG)
 
 # Link to deployed application:
 
