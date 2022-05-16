@@ -36,7 +36,9 @@
                             autofocus="true"
                             class="form-input"
                         />
-                        <button type="submit" class="btn">Find Weather</button>
+                        <button type="submit" class="btn city-search">
+                            Find Weather
+                        </button>
                     </form>
                 </div>
 
@@ -57,15 +59,18 @@
             <!-- content main display here -->
             <div>
                 <!-- Main day info here -->
-                <div class="daily">current day info here</div>
+                <div class="current">current day info here</div>
                 <!-- 5 day forcast here -->
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8 row">
                     <div class="col-12 col-md-8">
                         <h2 class="subtitle">
                             5 Day Forcast:
                             <span id="repo-search-term"></span>
                         </h2>
-                        <div id="repos-container" class="list-group"></div>
+                        <div
+                            id="repos-container"
+                            class="list-group forcast row"
+                        ></div>
                     </div>
                 </div>
             </div>
