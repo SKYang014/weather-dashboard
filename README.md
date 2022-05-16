@@ -12,4 +12,4 @@ These functions are not available
 
 # Link to deployed application:
 
-https://skyang014.github.io/work-day-scheduler-/
+https://skyang014.github.io/weather-dashboard/
