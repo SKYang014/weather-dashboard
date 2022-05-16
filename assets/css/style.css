@@ -1,9 +1,9 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
+    --primary: #74838c;
+    --secondary: #ffc4b8;
+    --tertiary: #f69197;
+    --light-dark: #5b5d70;
+    --dark: #282d3c;
     --border-radius: .3rem;
   }
   
@@ -294,6 +294,10 @@
   .col-12 {
     flex: 0 0 100%;
   }
+
+.current {
+    border: #282d3c 2px;
+}
   
   /* col-sm */
   @media screen and (min-width: 640px) {

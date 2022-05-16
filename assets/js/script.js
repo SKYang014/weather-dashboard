@@ -1,13 +1,32 @@
 var citySearch = document.querySelector(".city-search");
 var key = "38c610d08f06b4cfc6fed5cb4f2ca0ec";
 //submitted city var
-var formInput = "London";
+var formInput = document.querySelector("#city");
 // breakdown different data calls
-var apiDaily = ("https://api.openweathermap.org/data/2.5/weather?q="+ formInput 
+var city = "London"
+
+var apiDaily = ("https://api.openweathermap.org/data/2.5/weather?q="+ city 
 +"&appid=38c610d08f06b4cfc6fed5cb4f2ca0ec");
 var currentDate = (moment().format("MMM Do YY"));
 
-//var cityFetch = function () {
+// var cityFetch = function (event) {
+//     event.preventDefault();
+
+//     // get value from input element
+//     var city = formInput.value.trim();
+
+//         if (city) {
+//             console.log(city);
+//         getCity(city);
+//         }
+
+//     // clear old content
+//         else {
+//             console.log(error)
+//         }
+//     }
+
+//var getCity = function(city) {
     fetch(apiDaily)
     .then(function(response) {
         // request was successful
@@ -56,9 +75,6 @@ var currentDate = (moment().format("MMM Do YY"));
                             var currentUV = $('<div class="UV">')
                             currentUV.html("UV Index: " + ddata.current.uvi)
                             $(".current").append(currentUV);
-
-                            //define parameteres and data
-
 
                             for (var j = 0; j < 5; j++) {
 
@@ -150,4 +166,4 @@ var currentDate = (moment().format("MMM Do YY"));
 
 // event listener for search button click
 //even listener for created button search history, id by class
-citySearch.addEventListener("submit", cityFetch);
+//citySearch.addEventListener("submit", cityFetch);
